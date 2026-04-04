@@ -126,6 +126,12 @@ function initialState() {
     pendingReward: null,
     levelUpEvent: null,
     notification: null,
+    notion: {
+      workerUrl: '',
+      token: '',
+      connected: false,
+      botName: '',
+    },
   };
 }
 
@@ -369,6 +375,10 @@ function reducer(state, action) {
     case 'UNLOCK_ACHIEVEMENT': {
       if (state.achievements.includes(action.payload)) return state;
       return { ...state, achievements: [...state.achievements, action.payload] };
+    }
+
+    case 'SET_NOTION_CONFIG': {
+      return { ...state, notion: { ...state.notion, ...action.payload } };
     }
 
     case 'IMPORT_DATA': {
