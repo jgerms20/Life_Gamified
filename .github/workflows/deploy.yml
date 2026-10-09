@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/rpg-quest-todo-app-bwYsT
   workflow_dispatch:
 
 permissions:
@@ -44,6 +45,8 @@ jobs:
 
   deploy:
     needs: build
+    # The github-pages environment only accepts the repository's default branch.
+    if: github.ref_name == github.event.repository.default_branch || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
