@@ -1,0 +1,21 @@
+{
+  "name": "Life Gamified — Quest Journal",
+  "short_name": "Life Gamified",
+  "description": "A fantasy RPG quest journal for real life. Your AI scribe keeps it in step with your days.",
+  "start_url": "./#quests",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#120a05",
+  "theme_color": "#1d110a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "shortcuts": [
+    { "name": "Quest board", "url": "./#quests" },
+    { "name": "Treasury", "url": "./#treasury" }
+  ]
+}

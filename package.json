@@ -1,16 +1,19 @@
 {
   "name": "life-gamified",
-  "description": "RPG Quest Journal — A gamified task manager styled as a fantasy tome",
+  "description": "RPG Quest Journal \u2014 A gamified task manager styled as a fantasy tome",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs",
+    "docs": "node scripts/sync-docs.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.7.0",
     "react": "^19.2.4",

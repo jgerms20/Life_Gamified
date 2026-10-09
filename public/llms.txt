@@ -1,0 +1,8 @@
+# Life Gamified
+
+> A fantasy-RPG quest journal for one real person. AI agents can read and write it on their behalf.
+
+- Agent guide (start here): https://zsgacmfbqqmbcexomyoo.supabase.co/functions/v1/lg-agent/docs
+- REST base URL: https://zsgacmfbqqmbcexomyoo.supabase.co/functions/v1/lg-agent
+- MCP endpoint (streamable HTTP): https://zsgacmfbqqmbcexomyoo.supabase.co/functions/v1/lg-agent/mcp
+- Auth: `Authorization: Bearer lg_…` — the owner creates keys in the app under Settings → Agent access.
